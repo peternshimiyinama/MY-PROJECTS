@@ -1,0 +1,247 @@
+/*
+body{
+    background-image:url('/images/window.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*/
+/*a:link,a:visited
+{
+    background-color: rgb(143, 83, 83);
+    text-align: center;
+    padding: 14px 15px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover, a:active
+{
+    background-color: antiquewhite;
+    color: blueviolet;
+    text-decoration: underline;
+}
+*/
+body {
+    font-family: "Sofia", sans-serif;
+  }
+.Table,.Table th,.Table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-style: dashed;
+    padding: 15px;
+}
+#Employee{
+    width:auto;
+}
+/*.Time_table,th,td{
+    border: 1px solid burlywood;
+    border-collapse: collapse;
+    border-style: solid;
+}
+*/
+.Time_table th:nth-child(odd),.Time_table td:nth-child(odd){
+    background-color: blue;
+}
+.Time_table tr:nth-child(even){
+    background-color: rgba(90%, 12%, 30%, 0.5)
+}
+.Time_table{
+    border-collapse: collapse;
+}
+.Time_table tr{
+    border-bottom: 1px dashed black;
+}
+.Time_table tr:hover{
+    background-color: tomato;
+}
+#link{
+list-style-type:none;
+padding: 0;
+margin: 0;
+overflow: hidden;
+background-color: black;
+}
+#link li{
+    float:right;
+}
+#link li a{
+    display: block;
+    text-decoration:none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+form.form{
+
+background-color: rgb(200, 200, 200); 
+opacity: 0.9;
+background-repeat: repeat-x;
+background-clip: padding-box;
+}
+
+.field{
+
+    background-color: #add1d1;
+    background-clip: padding-box;
+}
+
+.div{
+    border: 2px solid black;
+    padding: 12px;
+    outline: 10px solid lightblue;
+    outline-offset:-15px;
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+}
+
+label.comm{
+
+    text-shadow: 2px 2px 4px red,0 0 2px blue;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type:decimal;
+}
+
+ul.two{
+
+    border-left: 5px solid tomato;
+    list-style-type: none;
+    background-color: lightslategray;
+    padding: 20px;
+}
+
+table.customers{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+table th,table td{
+    border: 1px solid #add1d1;
+    
+}
+table th{
+    background-color: green;
+    width: 100px;
+    text-align: center;
+    height: 20px;
+}
+table tr:nth-child(even){
+background-color: lightslategray;
+}
+table tr:hover{
+    background-color: #add1d1;
+}
+
+caption{
+    caption-side:bottom;
+}
+
+.box{
+float: left;
+border: 1px solid red;
+margin: 4px;
+text-align: center;
+width: 350px;
+height: 400px;
+}
+.box img{
+    width: 320px;
+    height: 340px;
+    
+}
+.box button{
+width: 300px;
+}
+#display{
+    display: none;
+}
+span{
+    float: left;
+    text-align: center;
+    display: inline;
+    background-color: #add1d1;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+    background-color: #add1d1;
+}
+.topleft{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color:#1613bd;
+    font-size:2.5em;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color:#1613bd;
+    font-size:2.5em;
+}
+.topright{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:#1613bd;
+    font-size:2.5em;
+}
+.bottomright{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color:#1613bd;
+    font-size:2.5em;
+}
+.center{
+    position: absolute;
+    color:#1613bd;
+    font-size:2.5em;
+    top: 50%;
+    left: 50%;
+}
+.index{
+    position:absolute;
+    top: 4980px;
+    left: 0;
+    z-index: -1;
+}
+
+.block1{
+    position: absolute;
+    top: 5500px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+}
+.block2{
+    position: absolute;
+    top: 5550px;
+    left: 20%;
+    border: 1px solid black;
+    background-color: rgb(58, 233, 175);
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    z-index: 2;
+}
+.block3{
+    position: absolute;
+    top: 5590px;
+    left: 10%;
+    border: 1px solid black;
+    background-color: rgb(14, 58, 43);
+    height: 100px;
+    width: 70%;
+    margin: auto;
+    z-index: 3;
+}
