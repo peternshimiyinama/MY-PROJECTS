@@ -1,0 +1,153 @@
+/* HTML DECLARATION*/
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: var(--font_family_heading);
+}
+/* VARIABLE DECLARATIONS */
+:root{
+    --Heading_font_size:10px;
+    --bg_color_navbar:black;
+    --bg_color_band:white;
+    --bg_color_tour:var("--bg_color_navbar");
+    --bg_color_contact:var("--bg_color_band");
+    --bg_footer:var("--bg_color_band");
+    --font_family_heading:Arial, Helvetica, sans-serif;
+    --font_size_heading: 40px;
+}
+/* ////////////////////////////////// BODY CODES ///////////////////////////////////*/
+
+/* NAVIGATION BAR */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    margin: 0;
+}
+div .navbar{
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2),0 0 5px 0 rgba(0, 0, 0, 0.7);
+    background-color: var(--bg_color_navbar);
+    width: 100%;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+.navbar a{
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: var(--font_family_heading);
+}
+.navbar a:hover:not(.searchbar){
+    background-color: rgba(226, 217, 217, 0.6);
+}
+.search{
+    float: right;
+}
+.navbar .searchbar:hover{
+    background-color:hsl(0, 100%, 55%);
+}
+
+/*IMAGE*/
+.bandimage{
+    position: relative;
+}
+.bandimage img{
+    width: 100%;
+    height: auto;
+}
+
+.bandcontent{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    bottom: 30px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+/* THE BAND*/
+
+.theband{
+    width: 60%;
+    margin: auto;
+    padding: 80px 0 80px 0;
+}
+.thebandimage{
+    display: flex;
+    justify-content: center;
+}
+.thebandcolumn{
+    float: left;
+    padding: 15px;
+}
+
+.theband .content h1,.theband .content h1+p{
+    text-align: center;
+}
+.theband .content p:last-child{
+    text-align: justify;
+    font-size: 20px;
+}
+.thebandcolumn p{
+    text-align: center;
+}
+
+/* TOUR DATE */
+
+.tour{
+    background-color: var(--bg_color_navbar);
+    color: white;
+}
+.tour .column{
+    width: 60%;
+    margin: auto;
+}
+.tour .tourheading{
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+
+.tour .tourdates{
+    background-color: var(--bg_color_band);
+    color: rgb(110, 108, 108);
+    padding: 20px;
+    font-size: 23px;
+    margin: 4px;
+}
+.tour .tourdates span{
+    background-color: hsl(0, 100%, 50%);
+    color: white;
+    padding: 0 10px 0 10px;
+    margin: 0 30px 0 30px;
+}
+.tour .tourdates p{
+    border-bottom:  1px solid rgb(122, 121, 118);
+    padding: 0 0 20px 0;
+}
+.tourdates p .lastspan{
+    background-color: var(--bg_color_navbar);
+    color: var(--bg_color_band);
+    border-radius: 50%;
+    float: right;
+}
+/* BOOKING */
+.tour .booking{
+    display: flex;
+    justify-content: center;
+}
+.tour .booking .kigali,.tour .booking .musanze,.tour .booking .rubavu{
+    float: left;
+    background-color: var(--bg_color_band);
+    margin: 24px;
+}
