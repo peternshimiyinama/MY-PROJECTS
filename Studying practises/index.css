@@ -1410,7 +1410,59 @@ div{
     background-color: lightgray;
 }
 ///////////////////////////////
+
+///////////////// MULTI COLUMNS ///////////
+
+div{
+    width: 80%;
+    margin:auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+    outline: 1px solid yellow;
+    outline-offset: 20px;
+}
+.column{
+    column-count: 3;
+    column-rule: 3px solid rgb(4, 71, 71);
+
+}
+.column h2{
+    column-span: all;
+}
+
+/////////////////// GRID LAYOUT ////////////////////
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aquamarine;
+    gap: 50px;
+    
+}
+
+.grid-container > div{
+    background-color: white;
+    padding: 40px;
+    line-height: 30px;
+    margin: 3px;
+    text-align: center;
+
+}
+
+.item1{
+    grid-column:  1 / 4;
+  }
+.item2{
+    grid-row: 2 / 8;
+}
+.item6:last-child{
+    grid-column: 1 / 4;
+}
+///////////////////////////////////////
 */
 
-
+@import "mystyle";
 
