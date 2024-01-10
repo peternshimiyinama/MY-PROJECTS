@@ -151,3 +151,107 @@ div .navbar{
     background-color: var(--bg_color_band);
     margin: 24px;
 }
+.booking div [class*="content"]{
+    color: black;
+    padding: 20px;
+    text-align: justify;
+}
+
+.booking .button{
+    background-color: var(--bg_color_navbar);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.rubavu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* BUYING TICKET SECTION */
+#buyticket{
+    visibility: hidden;
+    position: fixed;
+    width: 60%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: auto;
+    background-color: var(--bg_color_band);
+}
+#buyticket .tickets{
+    padding: 20px;
+}
+#buyticket .tickets label{
+    display: block;
+    padding: 10px 0 10px 0;
+    color: rgb(131, 128, 124);
+    font-size: 20px;
+}
+#buyticket form input{
+    padding: 15px;
+    width: 100%;
+}
+#buyticket form input:last-child{
+    margin-top: 20px;
+    background-color: hsl(150, 80%, 60%);
+    padding: 25px;
+    border: none;
+    font-size: 20px;
+}
+
+#buyticket h1{
+    background-color: hsl(150, 80%, 60%);
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+ #buyticket .tickets-header button{
+    float: right;
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 40px;
+    background-color:  hsl(150, 80%, 60%);
+ }
+ #buyticket .tickets-header button:hover,#buyticket form input:last-child:hover{
+    background-color: rgb(167, 158, 158);
+    color: black;
+ }
+ #buyticket .tickets-footer{
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+ }
+ #buyticket .tickets-footer button{
+    position: relative;
+    background-color: rgb(245, 39, 39);
+    padding: 15px 30px;
+    font-size: 17px;
+    color: white;
+    border: none;
+ }
+ #buyticket .tickets-footer button:hover{
+    background-color: lightslategray;
+    color: black;
+ }
+ #buyticket .tickets-footer button::after{
+    position: absolute;
+    content: "\00D7";
+    padding: 0 3px 0 3px;
+    font-weight: bolder;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(90%, -50%);
+ }
+ #buyticket .tickets-footer p{
+    float: right;
+ }

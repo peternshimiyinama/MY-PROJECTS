@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="row top">
+    <div class="row" id="top">
         <div class="column navbar">
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -66,23 +66,46 @@
                     <div class="kigalicontent">
                         <h3>Kigali</h3>
                         <p><time datetime="2023-01-20">Sat 13 Jan 2023</p>
+                        <p>Be the one to have an incridible discount by booking your ticket early, We can't wait to have an amazing show. Cheers to people from Kigali</p>
                     </div>
+                    <button class="button" onclick="booking()">Buy Tickets</button>
                 </div>
                 <div class="musanze">
                     <img src="/Band template/IMAGES/Musanze-11.jpg" alt="musanze" width="300px" height="200px">
                     <div class="musanzecontent">
                         <h3>Musanze</h3>
                         <p><time datetime="2023-01-20">Sat 20 Jan 2023</p>
+                        <p>Be the one to have an incridible discount by booking your ticket early, We can't wait to have an amazing show. Cheers to people from Musanze</p>
                     </div>
+                    <button class="button" onclick="booking()">Buy Tickets</button>
                 </div>
                 <div class="rubavu">
                     <img src="/Band template/IMAGES/Ruvavu.jpg" alt="rubavu" width="300px" height="200px">
                     <div class="rubavucontent">
                         <h3>Rubavu</h3>
                         <p><time datetime="2023-01-20">Sat 27 Jan 2023</p>
+                        <p>Be the one to have an incridible discount by booking your ticket early, We can't wait to have an amazing show. Cheers to people from Rubavu</p>
                     </div>
+                    <button class="button" onclick="booking()">Buy Tickets</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="buyticket">
+        <div class="tickets-header">
+            <button onclick="remove()">&#x00D7;</button>
+            <h1>Tickets</h1>
+        </div>
+        <form action="" class="tickets">
+            <label for="ticket-per-person">Tickets,5000Rwf per person</label>
+            <input type="text" id="ticket-per-person" max="1000" min="5000" placeholder="How many?">
+            <label for="emailaddress">Send to</label>
+            <input type="email" id="emailaddress" placeholder="Enter email">
+            <input type="submit" value="Pay &#10003;">
+        </form>
+        <div class="tickets-footer">
+            <p>Need <a href="">help?</a></p>
+            <button onclick="remove()">Close</button>
         </div>
     </div>
 </body>
