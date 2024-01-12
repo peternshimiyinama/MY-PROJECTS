@@ -28,6 +28,9 @@ body{
     margin: 0;
 }
 div .navbar{
+    position: fixed;
+    top: 0;
+    z-index: 2;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2),0 0 5px 0 rgba(0, 0, 0, 0.7);
     background-color: var(--bg_color_navbar);
     width: 100%;
@@ -56,16 +59,62 @@ div .navbar{
 .navbar .searchbar:hover{
     background-color:hsl(0, 100%, 55%);
 }
-.navbar li .dropdown,.navbar li .dropdown .dropdown-mid{
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 59px;
+    margin-left: 374px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.4),0 9px 19px 0px rgba(0, 0, 0,0.7);
+    width: 10%;
+}
+.dropdown-content ul li a{
     display: inline-block;
+    color: black;
+    transition: 0.5s;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
 }
-.navbar .dropdown-content{
-    display: block !important;
-    z-index: 1 !important;
-    background-color: transparent !important;
+.dropdown-content ul li a:hover{
+    background-color: rgb(107, 107, 107) !important;
 }
+.navbar .dropdown:hover .dropdown-content{
+    display: block;
+}
+/* DROPDOWN WITH ANOTHER ALTERNATIVE
+
+.dropdown-content{
+    display: none;
+}
+.navbar .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: 59px;
+    margin-left: 374px;
+    background-color: white;
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0, 0.2),0 2px 3px 2px rgba(0, 0, 0, 0, 0.5);
+    box-shadow: inset;
+    width: 10%;
+}
+.navbar .dropdown:hover .dropdown-content ul li a{
+    display: inline-block;
+    color: black;
+    transition: 0.5s;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+}
+.navbar .dropdown:hover .dropdown-content ul li a:hover{
+    background-color: rgb(107, 107, 107);
+}
+*/
+
 /*IMAGE*/
 .bandimage{
+    display: block;
     position: relative;
 }
 .bandimage img{
@@ -335,3 +384,5 @@ div .navbar{
  .footer p a{
     padding: 10px;
  }
+
+ /*MEDIA QUERIES*/
