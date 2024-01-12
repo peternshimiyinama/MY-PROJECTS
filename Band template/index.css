@@ -56,7 +56,14 @@ div .navbar{
 .navbar .searchbar:hover{
     background-color:hsl(0, 100%, 55%);
 }
-
+.navbar li .dropdown,.navbar li .dropdown .dropdown-mid{
+    display: inline-block;
+}
+.navbar .dropdown-content{
+    display: block !important;
+    z-index: 1 !important;
+    background-color: transparent !important;
+}
 /*IMAGE*/
 .bandimage{
     position: relative;
@@ -254,4 +261,77 @@ div .navbar{
  }
  #buyticket .tickets-footer p{
     float: right;
+ }
+
+ /* CONTACT SECTION */
+ .contact{
+    width: 60%;
+    margin: auto;
+    background-color: var(--bg_color_band);
+    padding: 60px 0 60px 0;
+ }
+ .contact-content{
+    margin-top: 50px;
+ }
+ .contact .contact-header{
+    text-align: center;
+    padding: 3px;
+ }
+
+ .contact form input{
+    padding: 20px 10px;
+
+ }
+
+ .contact .address, .contact form{
+    float: left;
+ }
+ .contact .address{
+    width: 40%;
+    font-size: 20px;
+    justify-content: center;
+ }
+ .address p a{
+    text-decoration: none;
+ }
+ .contact form{
+    width: 60%;
+ }
+ .contact form input[type="textarea"]{
+    width: 100%;
+    margin: 8px 0 8px 0;
+ }
+ .contact form input:not(input[type="textarea"]){
+    width: 49.3%;
+    right: 0;
+    margin: 1px;
+ }
+ .contact form input[type="submit"]{
+    width: 15% !important;
+    float: right;
+    right: 10%;
+    border: none;
+    background-color: var(--bg_color_navbar);
+    color: white;
+ }
+.contact-content .address .email::before{
+    content: "";
+    background-image: url("Band template/IMAGES/email.jpeg");
+    display: inline-block;
+}
+ /*KIGALI NIGHT*/
+ .kigali-night img{
+    width: 100%;
+    height: auto;
+    padding: 60px 0 60px 0;
+ }
+
+ /* FOOTER */
+
+ .footer p{
+    text-align: center;
+    padding: 5px;
+ }
+ .footer p a{
+    padding: 10px;
  }
