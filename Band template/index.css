@@ -298,16 +298,6 @@ div .navbar{
     background-color: lightslategray;
     color: black;
  }
- #buyticket .tickets-footer button::after{
-    position: absolute;
-    content: "\00D7";
-    padding: 0 3px 0 3px;
-    font-weight: bolder;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(90%, -50%);
- }
  #buyticket .tickets-footer p{
     float: right;
  }
@@ -363,11 +353,6 @@ div .navbar{
     background-color: var(--bg_color_navbar);
     color: white;
  }
-.contact-content .address .email::before{
-    content: "";
-    background-image: url("Band template/IMAGES/email.jpeg");
-    display: inline-block;
-}
  /*KIGALI NIGHT*/
  .kigali-night img{
     width: 100%;
