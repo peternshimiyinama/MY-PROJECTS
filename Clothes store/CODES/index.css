@@ -1,0 +1,66 @@
+/*BOX-SIZING DECLARATIONS*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIABLE DECLARATIONS*/
+
+
+/* HEADER */
+
+.logo-header{
+    position: fixed;
+    display: block;
+    background-color: rgb(49, 49, 49);
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+}
+.logo-header .column{
+    float: left;
+}
+.logo-header .profile{
+    float: right;
+    padding: 20px;
+}
+.logo-header .profile h3{
+    color: white;
+    bottom: 0;
+}
+/*BODY CONTENT */
+
+.body-content .column{
+    float: left;
+    padding: 10px;
+}
+.body-content .side-nav{
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    top: 75px;
+    z-index: 1;
+    background-color: rgb(85, 84, 84);
+}
+.body-content .arrivals,.body-content .moto-image{
+    position: relative;
+    top: 75px;
+    width: 80%;
+    left: 20%;
+}
+.body-content .moto-image{
+    height: 800px;
+}
+.moto-image img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 100% 25%;
+    display: block;
+}
+.body-content .arrivals-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 10px;
+    grid-template-rows: 400px;
+}
