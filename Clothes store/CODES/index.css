@@ -24,12 +24,12 @@
     float: right;
     padding: 20px;
 }
-.logo-header .profile button{
-    border: none;
+.logo-header .profile a{
     padding: 5px;
     font-size: 15px;
     color: white;
     background-color: rgb(49, 49, 49);
+    text-decoration: none;
 }
 /*BODY CONTENT */
 
@@ -210,4 +210,83 @@
     z-index: 1;
     height:auto;
     top: 2250px;
+}
+/*////////////////////////////////// LOGIN PAGE /////////////////////////*/
+.login-page{
+    background-color:  rgb(55, 159, 194);
+}
+.login-section{
+    position: absolute;
+    display: flex;
+    width: 30%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    opacity: 0.6;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.login-section form label{
+    display: block;
+    padding: 5px 0;
+}
+.login-section form input{
+    padding: 10px;
+    width: 250px;
+    border: 1px solid  rgb(55, 159, 194);
+}
+.login-section form input[type="submit"]{
+    padding: 10px;
+    width: 100px;
+    margin-top: 5px;
+}
+.login-section h4{
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/*///////////////////////  SIGN UP SECTION ////////////////////*/
+#signUpAccount{
+    visibility: hidden;
+}
+.sign-up{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border: 1px solid white;
+    width: 30%;
+    opacity: 0.6;
+}
+.sign-up form {
+    padding: 20px;
+}
+.sign-up form label{
+    display: block;
+    padding: 5px 0;
+}
+.sign-up form input:not(input[type="submit"]){
+    padding: 10px;
+    width: 300px;
+    border: 1px solid  rgb(55, 159, 194);
+}
+#country{
+    padding: 5px;
+}
+.sign-up input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    right:5px;
+    bottom: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transform: translateX(100px);
+    background-color: aquamarine;
 }
