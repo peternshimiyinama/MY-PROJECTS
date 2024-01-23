@@ -24,9 +24,12 @@
     float: right;
     padding: 20px;
 }
-.logo-header .profile h3{
+.logo-header .profile button{
+    border: none;
+    padding: 5px;
+    font-size: 15px;
     color: white;
-    bottom: 0;
+    background-color: rgb(49, 49, 49);
 }
 /*BODY CONTENT */
 
@@ -41,6 +44,51 @@
     top: 75px;
     z-index: 1;
     background-color: rgb(85, 84, 84);
+}
+.side-nav ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+.side-nav ul li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size:large;
+}
+.side-nav-bottom{
+    position: absolute;
+    bottom: 100px;
+}
+.moto-content h1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+    font-size: 100px;
+    font-family: "Playfair Display", sans-serif;
+    animation: moto 1s ease-in-out 0.3s 3 forwards backwards;
+}
+
+@keyframes moto {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(110px, 200px);
+    }
+    20% {
+        transform: translate(140px, 200px);
+    }
+    /* Add more keyframes as needed */
+    100% {
+        transform: translate(140px, 200px);
+    }
+}
+
+.moto-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .body-content .arrivals,.body-content .moto-image{
     position: relative;
@@ -60,7 +108,106 @@
 }
 .body-content .arrivals-content{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     column-gap: 10px;
-    grid-template-rows: 400px;
+    grid-template-rows: 410px;
+}
+.arrivals h1{
+    font-family: "Playfair Display", sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.arrivals-content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.arrivals-content div{
+    position: relative;
+    transition: all 1.0s;
+}
+.arrivals-content p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+.arrivals-content h4,.arrivals-content h5{
+    text-align: center;
+}
+.arrivals-content-column img{
+    width: 100%;
+}
+.arrivals-content .shopping{
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    height: 0;
+    background-color: hsla(216, 100%, 55%,0.9);
+    bottom: 14.5%;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s;
+}
+.arrivals-content .shopping button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border: none;
+    font-family:"Noto Serif",sans-serif;
+    background-color: hsla(216, 100%, 55%,0);
+    font-weight: bolder;
+    font-size: x-large;
+    text-wrap: nowrap;
+    padding: 5px;
+}
+.arrivals-content div:hover{
+    opacity: 0.9;
+}
+.arrivals-content div:hover .shopping{
+    opacity: 1;
+    height: 20%;
+}
+/*////////////////////// PAGINATION ////////////////////////*/
+.pagination ul{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.pagination ul li{
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+    background-color:rgb(14, 62, 78);
+}
+.pagination ul li:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.pagination ul li:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pagination ul li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+}
+.pagination ul li a:hover{
+    background-color: rgb(55, 159, 194);
+}
+/*//////////////////////// FOOTER //////////////////*/
+.footer{
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    left: 20%;
+    z-index: 1;
+    height:auto;
+    top: 2250px;
 }

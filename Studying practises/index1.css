@@ -1464,5 +1464,228 @@ div{
 ///////////////////////////////////////
 */
 
-@import "mystyle";
+div{
+    width: 100%;
+    float: left;
+    margin: 3px;
+}
+.container{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
 
+.container img{
+ width: 100%;
+ height: auto;
+}
+
+.container .text{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s ease;
+    background-color: hsl(231, 92%, 59%);
+}
+.text p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+}
+.container:hover .text{
+    opacity: 1;
+}
+
+
+.container1{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
+
+.container1 img{
+ width: 100%;
+ height: auto;
+ transition: 1s ease;
+}
+
+.container1 .text1{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: 1s ease;
+    background-color: hsl(103, 81%, 25%);
+    text-wrap: nowrap;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+.text1 p{
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 2px 10px;
+}
+.container1:hover .text1{
+    opacity: 1;
+}
+.container1:hover img{
+    opacity: 0.5;
+}
+
+
+
+.container2{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
+
+.container2 img{
+ width: 100%;
+ height: auto;
+}
+
+.container2 .text2{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    transition: 1s ease;
+    background-color: hsl(231, 92%, 59%);
+}
+.text2 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+}
+.container2:hover .text2{
+    bottom: 0;
+    opacity: 1;
+}
+
+
+
+.container3{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
+
+.container3 img{
+ width: 100%;
+ height: auto;
+}
+
+.container3 .text3{
+    position: absolute;
+    opacity: 0;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s ease;
+    background-color: hsl(231, 92%, 59%);
+}
+.text3 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+}
+.container3:hover .text3{
+    top: 0;
+    opacity: 1;
+}
+
+
+.container4{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
+
+.container4 img{
+ width: 100%;
+ height: auto;
+}
+
+.container4 .text4{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    height: 100%;
+    width: 0;
+    transition: 1s ease;
+    background-color: hsl(231, 92%, 59%);
+}
+.text4 p{
+    position: absolute;
+    text-wrap: nowrap;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+}
+.container4:hover .text4{
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+.container5{
+    width: 25%;
+    position: relative;
+    opacity: 1;
+}
+
+.container5 img{
+ width: 100%;
+ height: auto;
+}
+
+.container5 .text5{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    height: 100%;
+    width: 0;
+    transition: 1s ease;
+    background-color: hsl(231, 92%, 59%);
+}
+.text5 p{
+    position: absolute;
+    text-wrap: nowrap;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+}
+.container5:hover .text5{
+    right: 0;
+    width: 100%;
+    opacity: 1;
+}

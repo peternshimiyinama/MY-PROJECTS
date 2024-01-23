@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Clothes store/CODES/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100&display=swap" rel="stylesheet">
     <script src="/Clothes store/CODES/index.js"></script>
     <script src="https://kit.fontawesome.com/7f6543b6c3.js" crossorigin="anonymous"></script>
-    <title>Clothes store</title>
+    <title>P fashion store</title>
 </head>
 <body>
     <div class="row">
@@ -17,7 +23,7 @@
                     <img src="/Clothes store/IMAGES/logo.png" alt="logo" width="300px" height="auto">
                 </div>
                 <div class="column profile">
-                    <h3><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i> Profile <i class="fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></h3>
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"> </i><button onclick="login()"> Login</button>
                 </div>
             </div>
         </div>
@@ -35,62 +41,183 @@
             <div class="column moto-image">
                 <img src="/Clothes store/IMAGES/moto-image.jpeg" alt="moto-image">
                 <div class="moto-content">
-                    <h3>Elevate your style</h3>
+                    <h1>With P fashion store Trends meet tradition</h1>
                 </div>
             </div>
             <div class=" column arrivals">
                 <h1>New arrivals</h1>
                     <div class="arrivals-content">
-                        <div>
+                        <div class="arrivals-content-column">
                             <img src="/Clothes store/IMAGES/Men-1.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Men Street ready outfit</h4>
+                            <h4>Price</h4>
+                            <h5>60,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
+                        <div class="arrivals-content-column">
                             <img src="/Clothes store/IMAGES/Men-2.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Men casual trench coat</h4>
+                            <h4>Price</h4>
+                            <h5>100,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
+                        <div class="arrivals-content-column">
                             <img src="/Clothes store/IMAGES/Men-3.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Men suit stylish</h4>
+                            <h4>Price</h4>
+                            <h5>300,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
+                        <div class="arrivals-content-column">
                             <img src="/Clothes store/IMAGES/Men-4.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Women trench coat</h4>
+                            <h4>Price</h4>
+                            <h5>100,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
+                        <div class="arrivals-content-column">
                             <img src="/Clothes store/IMAGES/Men-5.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Men street casual style</h4>
+                            <h4>Price</h4>
+                            <h5>90,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-6.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Casual Outfits For Women.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Women casual outfit</h4>
+                            <h4>Price</h4>
+                            <h5>40,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-1.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/women street casual.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Women Business outfit</h4>
+                            <h4>Price</h4>
+                            <h5>110,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-2.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Cute baby pink outfit.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Cute baby pink outfit</h4>
+                            <h4>Price</h4>
+                            <h5>30,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-3.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/stunning oufit.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Women stunning oufit</h4>
+                            <h4>Price</h4>
+                            <h5>70,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-4.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Winter Fashion Styles.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Winter fashion style</h4>
+                            <h4>Price</h4>
+                            <h5>80,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-5.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/African Dresses.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Africa kitenge stlylish</h4>
+                            <h4>Price</h4>
+                            <h5>134,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
-                        <div>
-                            <img src="/Clothes store/IMAGES/Men-6.jpeg" alt="men style" width="200px" height="350px">
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Purple Ruffle Pencil Skirt.jpeg" alt="men style" width="200px" height="350px">
                             <p>New</p>
+                            <h4>Rufle pencile skirt</h4>
+                            <h4>Price</h4>
+                            <h5>34,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Men's Clothing.jpeg" alt="men style" width="200px" height="350px">
+                            <p>New</p>
+                            <h4>African men fashion</h4>
+                            <h4>Price</h4>
+                            <h5>55,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/African Suits.jpeg" alt="men style" width="200px" height="350px">
+                            <p>New</p>
+                            <h4>African men's suit</h4>
+                            <h4>Price</h4>
+                            <h5>130,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="arrivals-content-column">
+                            <img src="/Clothes store/IMAGES/Tracksuit Men.jpeg" alt="men style" width="200px" height="350px">
+                            <p>New</p>
+                            <h4>Track suit for men</h4>
+                            <h4>Price</h4>
+                            <h5>63,000Rwf</h5>
+                            <div class="shopping">
+                                <button onclick="shopping()">SHOP NOW</button>
+                            </div>
                         </div>
                     </div>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href=""><<</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li><a href="">>></a></li>
+                        </ul>
+                    </div>
             </div>
+        </div>
+        <div class="column footer">
+            <h1>Footer</h1>
         </div>
     </div>
 </body>
