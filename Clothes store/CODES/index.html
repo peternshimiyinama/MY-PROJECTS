@@ -20,39 +20,341 @@
         <div class="header">
             <div class="logo-header">
                 <div class=" column logo-image">
-                    <img src="/Clothes store/IMAGES/logo.png" alt="logo" width="300px" height="auto">
+                    <img src="/Clothes store/IMAGES/p-store-logo.png" alt="logo" width="150px" height="auto">
                 </div>
-                <div class="column profile">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i><a href="/Clothes store/CODES/login.html">Login</a>
+                <div class="column profile" onclick="login()">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i><a href="">Login</a>
                 </div>
             </div>
         </div>
         <div class="body-content">
             <div class="column side-nav">
-                <ul>
-                    <h2>Shop by category</h2><i class="fa-solid fa-square-list" style="z-index: 1;"></i>
-                    <li class="women-drop-down"><a href="">Women <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a>
-                        <div class="women-cotegory">
-                            <a href="">Dress</a>
-                            <a href="">Dress</a>
-                            <a href="">Dress</a>
-                            <a href="">Dress</a>
-                            <a href="">Dress</a>
-                            <a href="">Dress</a>
+                <h2>Shop By Category</h2>
+                <ul class="drop-down">
+                    <li class="shopping-drop-down"><a href="">Clothing</a>
+                        <div class="shopping-category">
+                            <h3><a href="">Women's dressing</a></h3>
+                            <ul>
+                                <li><a href="">Dresses</a></li>
+                                <li><a href="">Blouses & Shirts</a></li>
+                                <li><a href="">Tops & Tees</a></li>
+                                <li><a href="">Jumpsuits & Rompers</a></li>
+                                <li><a href="">Women's set</a></li>
+                                <li><a href="">Pants & capris</a></li>
+                                <li><a href="">Skirts</a></li>
+                                <li><a href="">Swimwears</a></li>
+                                <li><a href="">Coats & Jackets</a></li>
+                                <li><a href="">Shorts</a></li>
+                                <li><a href="">Socks & Hosiery</a></li>
+                                <li><a href="">Women's sleep & Lounge</a></li>
+                                <li><a href="">Jeans</a></li>
+                                <li><a href="">Hoodies & Sweatshirts</a></li>
+                                <li><a href="">Active Tracksuits</a></li>
+                            </ul>
+                            <h3><a href="">Men's dressing</a></h3>
+                            <ul>
+                                <li><a href="">Tops & Tees</a></li>
+                                <li><a href="">Shirts</a></li>
+                                <li><a href="">Suits & Blazer</a></li>
+                                <li><a href="">Pants</a></li>
+                                <li><a href="">Jeans</a></li>
+                                <li><a href="">Swimwears</a></li>
+                                <li><a href="">Coats & Jackets</a></li>
+                                <li><a href="">Shorts</a></li>
+                                <li><a href="">Socks</a></li>
+                                <li><a href="">men's sets</a></li>
+                                <li><a href="">Jeans</a></li>
+                                <li><a href="">Hoodies & Sweatshirts</a></li>
+                                <li><a href="">Active Tracksuits</a></li>
+                                <li><a href="">Sweaters</a></li>
+                            </ul>
+
+                            <h3><a href="">World Apparel</a></h3>
+
+                            <ul>
+                                <li><a href="">Africa Clothing</a></li>
+                                <li><a href="">Muslim Fashion</a></li>
+                            </ul>
+
+                            <h3><a href="">Accessories</a></h3>
+
+                            <ul>
+                                <li><a href="">Sun glasses</a></li>
+                                <li><a href="">Hats & Caps</a></li>
+                                <li><a href="">Belts</a></li>
+                                <li><a href="">Scarves & Wraps</a></li>
+                                <li><a href="">Headwear</a></li>
+                                <li><a href="">Gloves & Mittens</a></li>
+                                <li><a href="">Ties</a></li>
+                                <li><a href="">Other Accessories</a></li>
+                            </ul>
+                            <h3><a href="">Spotswear</a></h3>
+
+                            <ul>
+                                <li><a href="">Jerseys</a></li>
+                                <li><a href="">Clothing Sets</a></li>
+                                <li><a href="">Pants</a></li>
+                            </ul>
+
+                            <h3><a href="">Novelty & Special Use</a></h3>
+
+                            <ul>
+                                <li><a href="">Jerseys</a></li>
+                                <li><a href="">Clothing Sets</a></li>
+                                <li><a href="">Pants</a></li>
+                            </ul>
+                            
                         </div>
                     </li>
-                    <li><a href="">Men</a></li>
-                        <div class="side-nav-bottom">
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
+                    <li class="shoes-drop-down"><a href="">Shoes</a>
+                        <div class="shoes-category">
+                            <h3><a href="">Women's Shoes</a></h3>
+                            <ul>
+                                <li><a href="">Sandals & Flip Flop</a></li>
+                                <li><a href="">Nude Shoes</a></li>
+                                <li><a href="">Sneakers</a></li>
+                                <li><a href="">Doug Shoes</a></li>
+                                <li><a href="">Loaters</a></li>
+                                <li><a href="">Canvas Shoes</a></li>
+                                <li><a href="">Boots</a></li>
+                                <li><a href="">Slippers</a></li>
+                                <li><a href="">Other Women's Shoes</a></li>
+                            </ul>
+                            <h3><a href="">Men's Shoes</a></h3>
+                            <ul>
+                                <li><a href="">Sneakers</a></li>
+                                <li><a href="">Business Shoes</a></li>
+                                <li><a href="">Suits & Blazer</a></li>
+                                <li><a href="">Dug Shoes</a></li>
+                                <li><a href="">Loaters</a></li>
+                                <li><a href="">Canvas Shoes</a></li>
+                                <li><a href="">Boots</a></li>
+                                <li><a href="">Sandals & Flip Flop</a></li>
+                                <li><a href="">Slippers</a></li>
+                                <li><a href="">Other Women's Shoes</a></li>
+                            </ul>
+                            <h3><a href="">Shoe Accessories</a></h3>
+                            <ul>
+                                <li><a href="">Insoles</a></li>
+                                <li><a href="">Other Shoe Accessories</a></li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="luggage-drop-down"><a href="">Luggage & Bags</a>
+                        <div class="luggage-category">
+                            <h3><a href="">Women's bags</a></h3>
+                            <ul>
+                                <li><a href="">Shoulder Bags</a></li>
+                                <li><a href="">Sets</a></li>
+                                <li><a href="">Handle Bags</a></li>
+                                <li><a href="">Cross Body Bags</a></li>
+                                <li><a href="">Wallets</a></li>
+                                <li><a href="">Clutches</a></li>
+                                <li><a href="">Other Women's Bags</a></li>
+                            </ul>
+                            <h3><a href="">Men's Bags</a></h3>
+                            <ul>
+                                <li><a href="">Backpacks</a></li>
+                                <li><a href="">Briefcases</a></li>
+                                <li><a href="">Shoulder Bags</a></li>
+                                <li><a href="">Waist Packs</a></li>
+                                <li><a href="">Wallets & Cluthces</a></li>
+                            </ul>
+                            <h3><a href="">Other Bags & Accessories</a></h3>
+                            <ul>
+                                <li><a href="">Bags For t=Travel</a></li>
+                                <li><a href="">Other Bags</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="jewelry-drop-down"><a href="">Watch & Jewelry</a>
+                        <div class="jewelry-category">
+                            <h3><a href="">Women's Watches</a></h3>
+                            <ul>
+                                <li><a href="">Quartz watches</a></li>
+                                <li><a href="">Digital watches</a></li>
+                                <li><a href="">Dual display watches</a></li>
+                            </ul>
+                            <h3><a href="">Men's Jewelry</a></h3>
+                            <ul>
+                                <li><a href="">Earrings</a></li>
+                                <li><a href="">Necklaces</a></li>
+                                <li><a href="">Rings</a></li>
+                                <li><a href="">Jewelry sets</a></li>
+                                <li><a href="">Bracelets</a></li>
+                                <li><a href="">Anklets</a></li>
+                                <li><a href="">Body Jewelry</a></li>
+                            </ul>
+                            <h3><a href="">men's Watches</a></h3>
+                            <ul>
+                                <li><a href="">Quartz watches</a></li>
+                                <li><a href="">Digital watches</a></li>
+                                <li><a href="">Mechanical watches</a></li>
+                                <li><a href="">Dual display watches</a></li>
+                            </ul>
+                            <h3><a href="">Men's Jewelry</a></h3>
+                            <ul>
+                                <li><a href="">Earrings</a></li>
+                                <li><a href="">Necklaces</a></li>
+                                <li><a href="">Rings</a></li>
+                                <li><a href="">Bracelets</a></li>
+                            </ul>
+                            <h3><a href="">Other watches</a></h3>
+                            <ul>
+                                <li><a href="">Children's watches</a></li>
+                                <li><a href="">Pocket & bob watches</a></li>
+                                <li><a href="">Watch Accessories</a></li>
+                            </ul>
+                            <h3><a href="">Other Jewelry</a></h3>
+                            <ul>
+                                <li><a href="">Hair Jewelry</a></li>
+                                <li><a href="">Brooches</a></li>
+                                <li><a href="">Tie clips & Cufflinks</a></li>
+                                <li><a href="">Key chains</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="kids-drop-down"><a href="">KidS & Toys</a>
+                        <div class="kids-category">
+                            <h3><a href="">Kid's Wear</a></h3>
+                            <ul>
+                                <li><a href="">Dresses</a></li>
+                                <li><a href=""> Sets</a></li>
+                                <li><a href="">Tops</a></li>
+                                <li><a href="">Bottoms</a></li>
+                                <li><a href="">Socks & Leggings</a></li>
+                                <li><a href="">Other Kids Wear</a></li>
+                            </ul>
+                            <h3><a href="">Kid's SHOES</a></h3>
+                            <ul>
+                                <li><a href="">Sneakers</a></li>
+                                <li><a href="">Necklaces</a></li>
+                                <li><a href="">Leather Shoes</a></li>
+                                <li><a href="">Sandals</a></li>
+                                <li><a href="">Loafers</a></li>
+                                <li><a href="">Boots</a></li>
+                                <li><a href="">Other Kid's Shoes</a></li>
+                            </ul>
+                            <h3><a href="">Baby Fashion</a></h3>
+                            <ul>
+                                <li><a href="">Baby's Sets</a></li>
+                                <li><a href="">Bobysuits & One-pieces</a></li>
+                                <li><a href="">Dresses</a></li>
+                                <li><a href="">Accessories</a></li>
+                                <li><a href="">Boby Shoes</a></li>
+                                <li><a href="">Other Baby Clothing</a></li>
+                            </ul>
+                            <h3><a href="">Baby & Moms</a></h3>
+                            <ul>
+                                <li><a href="">Kid's Bags</a></li>
+                                <li><a href="">Baby Cares</a></li>
+                                <li><a href="">Activity & Gear</a></li>
+                                <li><a href="">Feeding</a></li>
+                                <li><a href="">Bedding</a></li>
+                                <li><a href="">Maternity</a></li>
+                            </ul>
+                            <h3><a href="">Other watches</a></h3>
+                            <ul>
+                                <li><a href="">Children's watches</a></li>
+                                <li><a href="">Pocket & bob watches</a></li>
+                                <li><a href="">Watch Accessories</a></li>
+                            </ul>
+                            <h3><a href="">Other Jewelry</a></h3>
+                            <ul>
+                                <li><a href="">Hair Jewelry</a></li>
+                                <li><a href="">Brooches</a></li>
+                                <li><a href="">Tie clips & Cufflinks</a></li>
+                                <li><a href="">Key chains</a></li>
+                            </ul>
+                    </li>
+                    <li class="beauty-drop-down"><a href="">Beauty</a>
+                        <div class="beauty-category">
+                            <h3><a href="">Makeup</a></h3>
+                            <ul>
+                                <li><a href="">Eye Shadow</a></li>
+                                <li><a href=""> Powder</a></li>
+                                <li><a href="">Eyes Makeup</a></li>
+                                <li><a href="">Face Makeup</a></li>
+                                <li><a href="">Lips Makeup</a></li>
+                                <li><a href="">Makeup Sets</a></li>
+                            </ul>
+                            <h3><a href="">Skin Care</a></h3>
+                            <ul>
+                                <li><a href="">Masks</a></li>
+                                <li><a href="">Serum</a></li>
+                                <li><a href="">Cleanser</a></li>
+                                <li><a href="">Face Creams</a></li>
+                                <li><a href="">Body Creams</a></li>
+                                <li><a href="">Sun & Sunless</a></li>
+                            </ul>
+                            <h3><a href="">Tools</a></h3>
+                            <ul>
+                                <li><a href="">Makeup Tools</a></li>
+                                <li><a href="">Skin Care Tools</a></li>
+                                <li><a href="">Styling Tools</a></li>
+                            </ul>
+                            <h3><a href="">More</a></h3>
+                            <ul>
+                                <li><a href="">Hair Care</a></li>
+                                <li><a href="">Shavings & Hair Removal</a></li>
+                                <li><a href="">Activity & Gear</a></li>
+                                <li><a href="">Nail Art</a></li>
+                                <li><a href="">Tattoos & Body Art</a></li>
+                            </ul>
+                    </li>
+                    <li class="wedding-drop-down"><a href="">Weddings</a>
+                        <div class="wedding-category">
+                            <h3><a href="">Weddings Dresses</a></h3>
+                            <ul>
+                                <li><a href="">Mermaid Wedding Dresses</a></li>
+                                <li><a href="">Tail Wedding Dresses</a></li>
+                                <li><a href="">Bubble Hem Wedding Dress</a></li>
+                                <li><a href="">Other Wedding Dresses</a></li>
+                            </ul>
+                            <h3><a href="">Suits & Gown</a></h3>
+                            <ul>
+                                <li><a href="">Suits & Blazer</a></li>
+                                <li><a href="">Women Gown</a></li>
+                                <li><a href="">Flower Girl Dresse</a></li>
+                            </ul>
+                            <h3><a href="">Accessories</a></h3>
+                            <ul>
+                                <li><a href="">Wedding Bouquet</a></li>
+                                <li><a href="">Petticoats</a></li>
+                                <li><a href="">Bridal Veils</a></li>
+                                <li><a href="">Bridal Hairpins</a></li>
+                                <li><a href="">Ties</a></li>
+                                <li><a href="">Bridal Gloves</a></li>
+                                <li><a href="">Bridal Hats</a></li>
+                                <li><a href="">Other Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hair-drop-down"><a href="">Hair</a>
+                        <div class="hair-category">
+                            <h3><a href="">Human Hair</a></h3>
+                            <ul>
+                                <li><a href="">Wigs</a></li>
+                                <li><a href="">Hair Extension</a></li>
+                                <li><a href="">Lace Closure</a></li>
+                                <li><a href="">Lace Frontal</a></li>
+                                <li><a href="">Hair Weft & Closure</a></li>
+                            </ul>
+                            <h3><a href="">Synthetic Hair</a></h3>
+                            <ul>
+                                <li><a href="">Wigs</a></li>
+                                <li><a href="">Hair Extension</a></li>
+                            </ul>
+                            <h3><a href="">More</a></h3>
+                            <ul>
+                                <li><a href="">Blended Hair</a></li>
+                                <li><a href="">Accessories & Tools</a></li>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="column moto-image">
                 <img src="/Clothes store/IMAGES/moto-image.jpeg" alt="moto-image">
-                <div class="moto-content">
-                    <h1>With P fashion store Trends meet tradition</h1>
-                </div>
             </div>
             <div class=" column arrivals">
                 <h1>New arrivals</h1>
@@ -226,8 +528,61 @@
                     </div>
             </div>
         </div>
+        <div class="login-page">
+            <div class="login-section" id="loginSection">
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder=" Enter password">
+                    <input type="submit">
+                    <h4 onclick="createAcount()">Create Account ?</h4>
+                </form>
+            </div>
+            <div class="sign-up" id="signUpAccount">
+                <form action="">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" placeholder="Your first name">
+                    <label for="sname">Second name</label>
+                    <input type="text" id="sname" placeholder="Your Second name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+                    <label for="password">Create password</label>
+                    <input type="password" id="password">
+                    <label for="password">Confirm password</label>
+                    <input type="password" id="password">
+                    <label for="date">Date of birth</label>
+                    <input type="date" id="date">
+                    <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="rwanda">Rwanda</option>
+                            <option value="burundi">Burundi</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="tanzania">Tanzania</option>
+                        </select>
+                        <input type="submit" value="Create account">
+                </form>
+            </div>
+        </div>
         <div class="column footer">
-            <h1>Footer</h1>
+            <div class="side-nav-bottom">
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Address</a></li>
+                <li><a href="">Carreers</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Client's feedback</a></li>
+                <li><a href="">Message</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Address</a></li>
+                <li><a href="">Carreers</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Client's feedback</a></li>
+            </div>
         </div>
     </div>
 </body>

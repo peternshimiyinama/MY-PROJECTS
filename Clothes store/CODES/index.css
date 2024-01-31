@@ -12,7 +12,7 @@
 .logo-header{
     position: fixed;
     display: block;
-    background-color: rgb(49, 49, 49);
+    background-color: #3366CC ;
     overflow: hidden;
     width: 100%;
     z-index: 2;
@@ -28,36 +28,66 @@
     padding: 5px;
     font-size: 15px;
     color: white;
-    background-color: rgb(49, 49, 49);
+    background-color:#3366CC ;
     text-decoration: none;
 }
 /*BODY CONTENT */
 
 .body-content .column{
     float: left;
-    padding: 10px;
 }
 .body-content .side-nav{
     width: 20%;
     position: fixed;
-    height: 100%;
+    height: 900px;
     top: 75px;
-    z-index: 1;
-    background-color: #1865bd;
+    z-index: 3;
+    background-color: #3366CC;
+    padding: 0;
+}
+.side-nav ul{
+    padding-top: 42px;
 }
 .side-nav ul li{
     list-style-type: none;
-    padding: 10px;
+    padding: 0px;
 }
 .side-nav ul li a{
-    text-align: center;
-    color: white;
+    display: block;
+    text-align: left;
+    color: #FFFFFF;
     text-decoration: none;
     font-size:large;
+    padding: 10px 20px;
+}
+.side-nav ul li a:hover{
+    background-color: #4D7EB6;
+    color: #333333;
 }
 .side-nav-bottom{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+}
+.side-nav-bottom li{
+    padding: 10px;
+    list-style-type: none;
+}
+.side-nav-bottom li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.side-nav h2{
     position: absolute;
-    bottom: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-wrap: nowrap;
+    background:   #CCCCCC;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #444444;
+    padding: 10px;
 }
 .moto-content h1 {
     position: absolute;
@@ -67,22 +97,6 @@
     font-size: 100px;
     font-family: "Playfair Display", sans-serif;
     animation: moto 1s ease-in-out 0.3s 3 forwards backwards;
-}
-
-@keyframes moto {
-    0% {
-        transform: translate(0);
-    }
-    10% {
-        transform: translate(110px, 200px);
-    }
-    20% {
-        transform: translate(140px, 200px);
-    }
-    /* Add more keyframes as needed */
-    100% {
-        transform: translate(140px, 200px);
-    }
 }
 
 .moto-content{
@@ -136,16 +150,20 @@
 }
 .arrivals-content h4,.arrivals-content h5{
     text-align: center;
+    color: #FFFFFF;
+}
+.arrivals-content-column{
+    background-color: #4D7EB6;
 }
 .arrivals-content-column img{
     width: 100%;
 }
 .arrivals-content .shopping{
     overflow: hidden;
-    opacity: 0;
     position: absolute;
     height: 0;
-    background-color: hsla(216, 100%, 55%,0.9);
+    opacity: 0;
+    background-color: #3366CC;
     bottom: 14.5%;
     left: 0;
     width: 100%;
@@ -168,30 +186,144 @@
     opacity: 0.9;
 }
 .arrivals-content div:hover .shopping{
-    opacity: 1;
+    opacity: 0.9;
     height: 20%;
 }
 
 /* /////////////////  DROP DOWN SECTION /////////////////////////*/
-.women-cotegory{
+.shoes-category,.luggage-category,.beauty-category,.jewelry-category,.kids-category,.wedding-category,.hair-category{
     position: absolute;
     overflow: hidden;
     opacity: 0;
-    left: 30%;
+    left: 100%;
     width: 0;
+    top: 0;
     transition: all 0.5s;
-    border: 1px solid white;
-    box-shadow: 6px 5px 10px 8px rgba(0, 0, 0, 0.4);
-
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    background-color: #3366CC;
 }
-.women-cotegory a{
-    display: block;
-    padding-left:0 ;
-    padding: 5px;
+.shopping-category h3,.shoes-category h3,.luggage-category h3,.beauty-category h3,.jewelry-category h3,.kids-category h3,.wedding-category h3, .hair-category h3{
+    text-align: left;
+    padding: 10px;
 }
-.women-drop-down:hover .women-cotegory{
+.drop-down ul:not(.shopping-drop-down):not(.shoes-drop-down):not(.luggage-drop-down):not(.beauty-drop-down):not(.jewelry-drop-down):not(.kids-drop-down):not(.wedding-drop-down):not(.hair-drop-down){
+    overflow: hidden;
+}
+.drop-down ul li:not(.shopping-drop-down):not(.shoes-drop-down):not(.luggage-drop-down):not(.beauty-drop-down):not(.jewelry-drop-down):not(.kids-drop-down):not(.wedding-drop-down):not(.hair-drop-down){
+    float: left;
+}
+.drop-down ul li a:not(.shopping-drop-down):not(.shoes-drop-down):not(.luggage-drop-down):not(.beauty-drop-down):not(.jewelry-drop-down):not(.kids-drop-down):not(.wedding-drop-down):not(.hair-drop-down){
+    text-wrap: nowrap;
+}
+.shopping-drop-down:hover .shopping-category,.shoes-drop-down:hover .shoes-category,.luggage-drop-down:hover .luggage-category,.beauty-drop-down:hover .beauty-category,.jewelry-drop-down:hover .jewelry-category,.kids-drop-down:hover .kids-category,.wedding-drop-down:hover .wedding-category,.hair-drop-down:hover .hair-category{
     opacity: 1;
-    width: 100%;
+    width: 700px;
+    height: auto;
+}
+.shopping-drop-down:hover::after,.shoes-drop-down:hover::after,.luggage-drop-down:hover::after,.beauty-drop-down:hover::after,.jewelry-drop-down:hover::after,.kids-drop-down:hover::after,.wedding-drop-down:hover::after,.hair-drop-down:hover::after{
+    opacity: 1;
+}
+/*///////////// SHOPPING /////*/
+.shopping-drop-down::after{
+    content: '\003E';
+    position:absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333333;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.shopping-drop-down{
+    padding-top: 400px;
+    position: relative;
+}
+.shopping-category{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    left: 100%;
+    width: 0;
+    top: -100%;
+    transition: all 0.5s;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    background-color: #3366CC;
+}
+/* ////// SHOES //////*/
+.shoes-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 10%;
+    transform: translateY(30%);
+    color: #333333;
+    transition: all 0.5s;
+}
+/*//////  Luggage //////*/
+.luggage-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 15%;
+    color: #333333;
+    transition: all 0.5s;
+}
+/* /////////Jewerly ///////////*/
+
+.jewelry-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 19.5%;
+    color: #333333;
+    transition: all 0.5s;
+}
+/*//////////// KIDS ///////////*/
+
+.kids-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 24.2%;
+    color: #333333;
+    transition: all 0.5s;
+}
+/*//// Beauty /////*/
+
+.beauty-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 28.5%;
+    color: #333333;
+    transition: all 0.5s;
+}
+/* //// Wedding ///*/
+
+.wedding-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 33.3%;
+    color: #333333;
+    transition: all 0.5s;
+}
+/*/// HAIR ///*/
+
+.hair-drop-down::after{
+    content: '\003E';
+    position: absolute;
+    opacity: 0;
+    right: 15px;
+    top: 38%;
+    color: #333333;
+    transition: all 0.5s;
 }
 /*////////////////////// PAGINATION ////////////////////////*/
 .pagination ul{
@@ -203,7 +335,7 @@
     overflow: hidden;
     list-style-type: none;
     float: left;
-    background-color:rgb(14, 62, 78);
+    background-color:#4D7EB6;
 }
 .pagination ul li:first-child{
     border-top-left-radius: 10px;
@@ -226,7 +358,7 @@
 /*//////////////////////// FOOTER //////////////////*/
 .footer{
     position: absolute;
-    background-color: black;
+    background-color: #4D7EB6;
     width: 80%;
     left: 20%;
     z-index: 1;
@@ -234,11 +366,11 @@
     top: 2250px;
 }
 /*////////////////////////////////// LOGIN PAGE /////////////////////////*/
-.login-page{
-    background-color:  rgb(55, 159, 194);
+#loginSection{
+    visibility: hidden;
 }
 .login-section{
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 30%;
     padding: 30px;
@@ -247,9 +379,10 @@
     border: 1px solid white;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
     opacity: 0.6;
-    top: 50%;
-    right: 50%;
+    top: 40%;
+    right: 20%;
     transform: translate(50%,-50%);
+    z-index: 2;
 }
 .login-section form label{
     display: block;
@@ -275,12 +408,12 @@
     visibility: hidden;
 }
 .sign-up{
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50%;
-    right: 50%;
+    top: 55%;
+    right: 20%;
     transform: translate(50%,-50%);
     border: 1px solid white;
     width: 30%;
