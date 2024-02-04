@@ -24,12 +24,13 @@
     float: right;
     padding: 20px;
 }
-.logo-header .profile a{
+.logo-header .profile p{
     padding: 5px;
     font-size: 15px;
     color: white;
-    background-color:#3366CC ;
     text-decoration: none;
+    display: inline;
+    cursor: pointer;
 }
 /*BODY CONTENT */
 
@@ -378,11 +379,11 @@
     align-items: center;
     border: 1px solid white;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
-    opacity: 0.6;
-    top: 40%;
-    right: 20%;
+    top: 32.1%;
+    right: 15.05%;
     transform: translate(50%,-50%);
     z-index: 2;
+    background-color:  #3366CC;
 }
 .login-section form label{
     display: block;
@@ -412,12 +413,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 55%;
-    right: 20%;
+    top: 52.9%;
+    right: 15.05%;
     transform: translate(50%,-50%);
     border: 1px solid white;
     width: 30%;
-    opacity: 0.6;
+    color: white;
+    background-color:  #3366CC;
 }
 .sign-up form {
     padding: 20px;
@@ -429,6 +431,12 @@
 .sign-up form input:not(input[type="submit"]){
     padding: 10px;
     width: 300px;
+    border: 1px solid  rgb(55, 159, 194);
+}
+.sign-up form #country{
+    border: 1px solid  rgb(55, 159, 194);
+}
+.sign-up form #country option:active{
     border: 1px solid  rgb(55, 159, 194);
 }
 #country{
